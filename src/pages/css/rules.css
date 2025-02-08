@@ -1,0 +1,21 @@
+.content li {
+  margin-top: 0.5rem;
+  transition: all 0.5s;
+}
+
+.content li:hover {
+  transform: scale(1.02);
+}
+
+@media only screen and (max-width: 991px) {
+  body {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Select the image by class name and apply the width */
+  .mobile-image {
+    width: 60px; /* Adjust the width as needed */
+  }
+}

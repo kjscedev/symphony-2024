@@ -1,0 +1,126 @@
+html,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0vw;
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; 
+}
+
+.image-list {
+  display: flex;
+  transition: transform 0.5s ease; 
+}
+
+.image-list {
+  overflow: hidden;
+}
+
+.arrow-button-container {
+  width: 5vh;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid orange;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2vh;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin: 0 2vh;
+}
+
+.arrow-button-container:active {
+  cursor: none;
+}
+
+.image-container {
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease; 
+  opacity: 1; 
+}
+
+.image-container.hidden {
+  opacity: 0; 
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-text {
+  width: 150px;
+  color: #E88024;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.image-overlay a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.image-container .image-overlay {
+  opacity: 0.8;
+  height: 80vh;
+}
+
+.image-container img {
+  width: 20vh;
+  height: 20vh;
+  margin: 0 1vh;
+  transition: transform 0.5s ease;
+  border-top: 1.5vh solid #e88024;
+  border-left: 1.5vh solid #e88024;
+  border-bottom: 1.5vh solid #3e2b73;
+  border-right: 1.5vh solid #3e2b73;
+}
+
+.visible {
+  max-height: none;
+  object-fit: cover;
+  flex-grow: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .image-container img {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+.slide-left {
+  transform: translateX(-100%);
+}
+
+.slide-right {
+  transform: translateX(100%);
+}

@@ -1,0 +1,61 @@
+.menu-icon {
+  display: none;
+}
+
+/* Style the navigation links */
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 27px;
+  font-weight: 900;
+}
+
+.nav-menu.active {
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./Satoshi-Medium.otf") format("opentype");
+}
+
+ul {
+  font-family: "Satoshi";
+}
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    /* Adjust as needed */
+    left: 0;
+    background: #000;
+    z-index: 100;
+  }
+
+  .nav-menu.active .list {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #fff;
+    /* Optional */
+  }
+}
