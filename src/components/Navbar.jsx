@@ -24,13 +24,13 @@ const Navbar = () => {
 
         {/* Hamburger Menu */}
         <div className="lg:hidden absolute right-6 z-20 cursor-pointer" onClick={toggleMenu}>
-          {showMenu ? <FaTimes size={24} /> : <FaBars size={24} />}
+          {showMenu ? <FaTimes size={24} className="invert" /> : <FaBars size={24}  />}
         </div>
 
         {/* Navigation Links */}
         <ul className={`flex items-center justify-center w-full transition-all duration-300 ease-in-out
           ${showMenu 
-            ? "flex-col fixed top-0 left-0 w-full h-screen bg-black bg-opacity-95 pt-20 space-y-6" 
+            ? "flex-col fixed top-0 left-0 w-full h-screen bg-black text-white bg-opacity-95 pt-20 space-y-6" 
             : "hidden lg:flex lg:flex-row lg:space-y-0"}`}>
           <Link to="/events" onClick={closeMenu} className="list m-4 p-2 hover:translate-y-[-5px] transition-all duration-300 ">
             EVENTS
