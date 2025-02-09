@@ -11,119 +11,128 @@ const Shield = () => {
   switch (content) {
     case 1:
       displayContent = (
-        <div className=" flex flex-col justify-center items-center gap-9 w-[200px] h-[200px] font-Symphony  ">
+        <div className="flex flex-col justify-center items-center gap-6 w-full">
           <div>
             <img
-              className="  w-[60vw] md:w-[15vw] m-auto mt-14"
-              src="m3.png"
+              className="w-[60vw] md:w-[15vw] mx-auto"
+              src="shield1.png"
               alt="Content 1"
             />
           </div>
-          <div className=" text-white text-center text-3xl">
-            {" "}
-            shield antakshari
+          <div className="text-black text-center text-2xl md:text-3xl">
+            Shield Antakshari
           </div>
         </div>
       );
       break;
     case 2:
       displayContent = (
-        <div className=" flex flex-col justify-center items-center gap-9 w-[200px] h-[200px]  ">
+        <div className="flex flex-col justify-center items-center gap-6 w-full">
           <div>
             <img
-              className=" w-[60vw] md:w-[15vw] m-auto mt-14"
-              src="m4.png"
+              className="w-[60vw] md:w-[15vw] mx-auto"
+              src="shield2.png"
               alt="Content 2"
             />
           </div>
-          <div className=" text-white text-center text-3xl"> shield dance</div>
+          <div className="text-black text-center text-2xl md:text-3xl">
+          Shield Dance
+          </div>
         </div>
       );
       break;
     case 3:
       displayContent = (
-        <div className=" flex flex-col justify-center items-center gap-9 w-[200px] h-[200px]  ">
+        <div className="flex flex-col justify-center items-center gap-6 w-full">
           <div>
             <img
-              className=" w-[60vw] md:w-[15vw] m-auto mt-14"
-              src="m2.png"
+              className="w-[60vw] md:w-[15vw] mx-auto"
+              src="shield3.png"
               alt="Content 3"
             />
           </div>
-          <div className=" text-white text-center text-3xl"> shield music</div>
+          <div className="text-black text-center text-2xl md:text-3xl">
+            Shield Music
+          </div>
         </div>
       );
       break;
     case 4:
       displayContent = (
-        <div className=" flex flex-col justify-center items-center gap-9 w-[200px] h-[200px]  ">
+        <div className="flex flex-col justify-center items-center gap-6 w-full">
           <div>
             <img
-              className="  w-[60vw] md:w-[15vw] m-auto mt-14"
-              src="m5.png"
+              className="w-[60vw] md:w-[15vw] mx-auto"
+              src="shield4.png"
               alt="Content 4"
             />
           </div>
-          <div className=" text-white text-center text-3xl"> shield drama</div>
+          <div className="text-black text-center text-2xl md:text-3xl">
+          Shield Drama
+          </div>
         </div>
       );
       break;
     case 5:
       displayContent = (
-        <div className=" flex flex-col justify-center items-center gap-9 w-[200px] h-[200px]  ">
+        <div className="flex flex-col justify-center items-center gap-6 w-full">
           <div>
             <img
-              className="  w-[60vw] md:w-[15vw] m-auto mt-14"
-              src="m6.png"
+              className="w-[60vw] md:w-[15vw] mx-auto"
+              src="shield5.png"
               alt="Content 5"
             />
           </div>
-          <div className=" text-white text-center text-3xl">
-            shield mockumentary
+          <div className="text-black text-center text-2xl md:text-3xl">
+          Shield Mockumentary
           </div>
         </div>
       );
       break;
     case 6:
       displayContent = (
-        <div className=" flex flex-col justify-center items-center gap-9 w-[200px] h-[200px]  ">
+        <div className="flex flex-col justify-center items-center gap-6 w-full">
           <div>
             <img
-              className="  w-[60vw] md:w-[15vw] m-auto mt-14"
-              src="m10.png"
+              className="w-[60vw] md:w-[15vw] mx-auto"
+              src="shield6.png"
               alt="Content 6"
             />
           </div>
-          <div className=" text-white text-center text-3xl"> shield roast</div>
+          <div className="text-black text-center text-2xl md:text-3xl">
+          Shield Roast
+          </div>
         </div>
       );
       break;
     case 7:
       displayContent = (
-        <div className=" flex flex-col justify-center items-center gap-9 w-[200px] h-[200px]  ">
+        <div className="flex flex-col justify-center items-center gap-6 w-full">
           <div>
             <img
-              className="  w-[60vw] md:w-[15vw] m-auto mt-14"
-              src="m9.png"
+              className="w-[60vw] md:w-[15vw] mx-auto"
+              src="shield7.png"
               alt="Content 7"
             />
           </div>
-          <div className=" text-white text-center text-3xl"> shield art </div>
+          <div className="text-black text-center text-2xl md:text-3xl">
+          Shield Art
+          </div>
         </div>
       );
       break;
     case 8:
       displayContent = (
-        <div className=" flex flex-col justify-center items-center gap-9 w-[200px] h-[200px]  ">
+        <div className="flex flex-col justify-center items-center gap-6 w-full">
           <div>
             <img
-              className="  w-[60vw] md:w-[15vw] m-auto mt-14"
-              src="m7.png"
+              className="w-[60vw] md:w-[15vw] mx-auto"
+              src="shield8.png"
               alt="Content 8"
             />
           </div>
-          <div className=" text-white text-center text-3xl">
-            shield photography
+          <div className="text-black text-center text-2xl md:text-3xl">
+          Shield Photography
           </div>
         </div>
       );
@@ -133,144 +142,54 @@ const Shield = () => {
   }
 
   return (
-    <div className="h-[120vh] md:h-[128vh] w-[100vw] bg-[url('../bgsym.png')] bg-repeat bg-cover pt-[18vh] ">
-      <div className="h-[60vh] w-[80vw] md:h-[70vh] md:w-[70vw] justify-center items-center m-auto backdrop-blur-xl rounded-3xl border-2 border-yellow-300  ">
-        <div className="  flex md:flex-row flex-col justify-center items-center  gap-48 m-auto ">
-          <div>
-            <div>
-              <img
-                className="  w-[60vw] md:w-[18vw] m-auto mt-14 md:block hidden"
-                src="m1r.png"
-                alt="Content 1"
-              />
-            </div>
-            <div
-              className="absolute w-[300px] h-[0px] border-[3px] border-zinc-400 transform rotate-90 hidden md:flex"
-              style={{ left: "calc(50% - 150px)", top: "183px" }}
-            ></div>
-          </div>
-          <div>{displayContent}</div>
-        </div>
-        <div className="text-white text-center mt-7 font-bold md:flex justify-center items-center absolute bottom-8 m-auto w-[80vw] md:w-[70vw] -gap-[100px] hidden ">
-          <button className="m-auto backdrop-blur-xl text-xl rounded-xl border-2 border-yellow-300 hover:border-yellow-600 p-[10px]">
-            Know More
-          </button>
-          <button className="m-auto backdrop-blur-xl text-xl rounded-xl border-2 border-yellow-300 hover:border-yellow-600 p-[10px]">
-            Register
-          </button>
-          <button className="m-auto backdrop-blur-xl text-xl rounded-xl border-2 border-yellow-300 hover:border-yellow-600 p-[10px]">
-            Back
-          </button>
-        </div>
-        <img
+    <div className="min-h-screen w-full bg-[url('../bg.png')] bg-repeat bg-cover pt-16 pb-8">
+      <div className="w-[90vw] md:w-[40vw] mx-auto backdrop-blur-xl rounded-3xl border-2 border-yellow-300 py-8 px-4 relative mt-20 md:mt-32">
+        <div className="flex flex-col justify-center items-center">
+          {displayContent}
+
+          <div className="flex md:flex-row gap-4 mt-8 w-full justify-center">
+            <button className="backdrop-blur-xl w-32 text-lg md:text-xl text-black rounded-xl border-2 bg-red-300 hover:bg-red-600 hover:scale-105 transition-all duration-300 px-6 py-2">
+              <a href="https://forms.gle/XYffMYpcivCLC9iaA" target="_blank">
+                Register
+              </a>
+            </button>
+            <button className="backdrop-blur-xl w-48 text-lg md:text-xl text-black rounded-xl border-2 bg-blue-300 hover:bg-blue-600 hover:scale-105 transition-all duration-300 px-6 py-2">
+              <a href="https://forms.gle/x2MdF5oLdYk6ESyn8" target="_blank">
+                Payment Form
+              </a>
+            </button>
+            <img
           className="absolute -bottom-10 -right-8"
           width={110}
           src="hme.png"
           alt="Image"
         />
-      </div>
-      <div className="text-white text-center mt-10 -gap-[100px] font-bold flex justify-center items-center bottom-8 m-auto w-[80vw] md:w-[70vw] -gap-[100px] md:hidden  ">
-        <button className="m-auto backdrop-blur-xl text-xl rounded-xl border-2 border-yellow-300 hover:border-yellow-600 p-[10px]">
-          Know More
-        </button>
-        <button className="m-auto backdrop-blur-xl text-xl rounded-xl border-2 border-yellow-300 hover:border-yellow-600 p-[10px]">
-          Register
-        </button>
-        <button className="m-auto backdrop-blur-xl text-xl rounded-xl border-2 border-yellow-300 hover:border-yellow-600 p-[10px]">
-          Back
-        </button>
-      </div>
-      <div className="flex m-auto justify-center items-center gap-4 md:gap-9 mt-8">
-        <div>
-          <button onClick={() => changeContent(1)}>
-            <div className=" backdrop-blur-xl w-[80px] h-[80px] m-auto">
-              <img
-                className="w-[12vw] md:w-[180px] m-auto hover:scale-110"
-                src="m3.png"
-                alt="Content 1"
-              />
-            </div>
-          </button>
-        </div>
-        <div>
-          <button onClick={() => changeContent(2)}>
-            <div className=" backdrop-blur-xl w-[80px] h-[80px]">
-              <img
-                className="w-[12vw] md:w-[17vw] m-auto hover:scale-110"
-                src="m4.png"
-                alt="Content 2"
-              />
-            </div>
-          </button>
-        </div>
-        <div>
-          <button onClick={() => changeContent(3)}>
-            <div className=" backdrop-blur-xl w-[80px] h-[80px]">
-              <img
-                className="w-[12vw] md:w-[17vw] m-auto hover:scale-110"
-                src="m2.png"
-                alt="Content 3"
-              />
-            </div>
-          </button>
-        </div>
-        <div>
-          <button onClick={() => changeContent(4)}>
-            <div className=" backdrop-blur-xl w-[80px] h-[80px]">
-              <img
-                className="w-[12vw] md:w-[17vw] m-auto hover:scale-110"
-                src="m5.png"
-                alt="Content 4"
-              />
-            </div>
-          </button>
+          </div>
         </div>
       </div>
-      <div className="flex m-auto justify-center items-center gap-4 md:gap-9 mt-8">
-        <div>
-          <button onClick={() => changeContent(5)}>
-            <div className=" backdrop-blur-xl w-[80px] h-[80px]">
-              <img
-                className="w-[12vw] md:w-[17vw] m-auto hover:scale-110"
-                src="m6.png"
-                alt="Content 5"
-              />
-            </div>
+
+      <div className="flex justify-center items-center gap-4 md:gap-9 mt-8">
+        {[1, 2, 3, 4].map((num) => (
+          <button key={num} onClick={() => changeContent(num)}>
+            <img
+              className="w-20 h-20 p-2 hover:scale-110 transition-transform"
+              src={`shield${num}.png`}
+              alt={`Shield ${num}`}
+            />
           </button>
-        </div>
-        <div>
-          <button onClick={() => changeContent(6)}>
-            <div className=" backdrop-blur-xl w-[80px] h-[80px]">
-              <img
-                className="w-[12vw] md:w-[17vw] m-auto hover:scale-110"
-                src="m10.png"
-                alt="Content 6"
-              />
-            </div>
+        ))}
+      </div>
+
+      <div className="flex justify-center items-center gap-4 md:gap-9 mt-4">
+        {[5, 6, 7, 8].map((num) => (
+          <button key={num} onClick={() => changeContent(num)}>
+            <img
+              className="w-20 h-20 p-2 hover:scale-110 transition-transform"
+              src={`shield${num}.png`}
+              alt={`Shield ${num}`}
+            />
           </button>
-        </div>
-        <div>
-          <button onClick={() => changeContent(7)}>
-            <div className=" backdrop-blur-xl w-[80px] h-[80px]">
-              <img
-                className="w-[12vw] md:w-[17vw] m-auto hover:scale-110"
-                src="m9.png"
-                alt="Content 7"
-              />
-            </div>
-          </button>
-        </div>
-        <div>
-          <button onClick={() => changeContent(8)}>
-            <div className=" backdrop-blur-xl w-[80px] h-[80px]">
-              <img
-                className="w-[12vw] md:w-[7vw] m-auto hover:scale-110  "
-                src="m7.png"
-                alt="Content 8"
-              />
-            </div>
-          </button>
-        </div>
+        ))}
       </div>
     </div>
   );
