@@ -8,7 +8,7 @@ import Syahi from "./pages/Syahi";
 import Events from "./pages/Events";
 import Shield from "./pages/Shield";
 import Rules from "./pages/Rules";
-import Sponsers from "./pages/Sponsers.jsx";
+import Sponsors from "./pages/Sponsors.jsx";
 import Proshows from "./pages/Proshows";
 import React, { useState, useEffect } from "react";
 
@@ -46,7 +46,7 @@ function App() {
               <Route path="/syahi" element={<Syahi />} />
               <Route path="/events" element={<Events />} />
               <Route path="/shield" element={<Shield />} />
-              <Route path="/sponsors" element={<Sponsers />} />
+              <Route path="/sponsors" element={<Sponsors />} />
               <Route path="/rules" element={<Rules />} />
 
               <Route path="/proshows" element={<Proshows />} />

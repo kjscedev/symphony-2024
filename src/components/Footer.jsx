@@ -1,76 +1,88 @@
+import React from "react";
+import { FaInstagram, FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+
 function Footer() {
   return (
-    <div className=" bg-black text-white h-[20vh] md:h-[40vh] w-full align-bottom overflow-y-hidden md:m-auto ">
+    <div className="bg-black text-white h-[20vh] md:h-[40vh] w-full align-bottom overflow-hidden md:m-auto">
       <div>
-        <div className="flex items-center justify-center gap-[6vw] md:gap-[10vw] text-center align-middle  m-auto  h-[20vh] md:h-[34vh] mt-4 ">
-          <div className=" text-center  w-[32vw] md:w-[20vw]  ">
-            <h3 className=" text-[10px] md:text-2xl font-extrabold mt-6 md:0 ">
+        <div className="flex items-center justify-center gap-[6vw] md:gap-[10vw] text-center align-middle m-auto h-[20vh] md:h-[34vh] mt-4">
+          {/* Contact Section */}
+          <div className="text-center w-[32vw] md:w-[20vw]">
+            <h3 className="text-xs md:text-2xl font-extrabold mt-6 md:mt-0">
               CONTACT US
             </h3>
-            <br></br>
-            {/* <div class="dark:bg-white-700 h-1 w-64 rounded border-0 bg-gray-100 md:my-5"></div> */}
-            <div className="text-[8px] md:text-sm">
-              <h4 class=" ">Advait Pathankar</h4>
-              <h4 class=" ">Gen. Secretary</h4>
-              <a className="  hover:text-zinc-500" href="tel:+91-829-138-3303">
-                <span> Mobile no. </span>
-                +91 9372930910
+            <br />
+            <div className="text-[10px] md:text-sm">
+              <h4>Esha Jain</h4>
+              <h4>Gen. Secretary</h4>
+              <a className="hover:text-zinc-500" href="tel:+918779624785">
+                <span>Mobile no. </span>+91 87796 24785
               </a>
-              <h4 class=" ">
-                <br></br>Smit Malde
-              </h4>
-              <h4 class=" ">Jt. Gen. Secretary</h4>
-              <a className="  hover:text-zinc-500" href="tel:+91-829-138-3303">
-                <span> Mobile no. </span>
-                +91 8108928819
+              <h4><br />Rishi Shah</h4>
+              <h4>Jt. Gen. Secretary</h4>
+              <a className="hover:text-zinc-500" href="tel:+919137954546">
+                <span>Mobile no. </span>+91 91379 54546
               </a>
             </div>
             <br />
-            <div className=" flex gap-4 justify-center">
+
+            {/* Social Media Links */}
+            <div className="flex flex-wrap gap-3 md:gap-4 justify-center w-full">
               <a
-                className=" hover:text-red-500 "
-                href="https://www.instagram.com/kjsce_skream/"
+                className="hover:text-pink-500 text-lg md:text-xl"
+                href="https://www.instagram.com/kjsce_symphony/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <i className="fab fa-instagram"></i>
+                <FaInstagram />
               </a>
               <a
-                className="hover:text-red-500"
-                href="https://www.facebook.com/KJSCESKREAM/"
+                className="hover:text-blue-500 text-lg md:text-xl"
+                href="https://www.facebook.com/KJSCESymphony/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <i className="fab fa-facebook"></i>
+                <FaFacebook />
               </a>
               <a
-                className="hover:text-red-500"
-                href="https://twitter.com/kjsceskream?lang=en"
+                className="hover:text-blue-500 text-lg md:text-xl"
+                href="https://x.com/KjsceSymphony"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <i className="fab fa-twitter"></i>
+                <FaTwitter />
               </a>
               <a
-                className="hover:text-red-500"
-                href="https://www.youtube.com/channel/UC7Z32X4uNZ8c31NteK3065g"
+                className="hover:text-red-500 text-lg md:text-xl"
+                href="https://www.youtube.com/@KJSCELive"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <i className="fa fa-youtube-play"></i>
+                <FaYoutube />
               </a>
             </div>
             <br />
           </div>
-          <div className="  w-[20vw] flex justify-center ">
-            <img className="w-[159px]" src="logoh.png" alt="image" />
+
+          {/* Logo Section */}
+          <div className="w-[20vw] flex justify-center">
+            <img className="w-[159px]" src="logoh.png" alt="logo" />
           </div>
-          <div className="  w-[32vw] md:w-[20vw]">
+
+          {/* Reach Us Section */}
+          <div className="w-[32vw] md:w-[20vw]">
             <div className="flex gap-28">
-              <div className="  text-center">
-                <h3 className=" text-[10px] md:text-2xl font-extrabold ">
+              <div className="text-center">
+                <h3 className="text-xs md:text-2xl font-extrabold">
                   REACH US
                 </h3>
-                <br></br>
-                {/* <div class="dark:bg-white-700 h-1 w-64 rounded border-0 bg-gray-100 md:my-5"></div> */}
-                <div className="text-[8px] md:text-sm">
-                  <h4 className="  font-bold ">Address</h4>
-                  <h4 className=" ">
-                    K.J. Somaiya College of <br></br>Engineering Vidyanagar,
-                    Vidya Vihar East,<br></br> Vidyavihar, Mumbai, Maharashtra
-                    400077.
+                <br />
+                <div className="text-[10px] md:text-sm">
+                  <h4 className="font-bold">Address</h4>
+                  <h4>
+                    K.J. Somaiya College of <br />
+                    Engineering Vidyanagar, Vidya Vihar East,<br />
+                    Vidyavihar, Mumbai, Maharashtra 400077.
                   </h4>
                 </div>
               </div>
@@ -78,8 +90,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
-      {/* <div class=" dark:bg-white-700 m-auto h-1 w-10/12 rounded border-0 bg-black md:my-5"></div> */}
     </div>
   );
 }

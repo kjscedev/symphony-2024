@@ -1,273 +1,44 @@
-import React, { useEffect, useState } from "react";
-import "./css/proshows.css";
+import React from "react";
+
 const Proshows = () => {
-  //   const [isMobileView, setIsMobileView] = useState(false);
-  //   const [currentIndex, setCurrentIndex] = useState(0);
-
-  //   useEffect(() => {
-  //     const handleResize = () => {
-  //       setIsMobileView(window.innerWidth <= 768); // Adjust breakpoint as needed
-  //     };
-
-  //     window.addEventListener("resize", handleResize);
-  //     handleResize(); // Initial check
-  //     return () => {
-  //       window.removeEventListener("resize", handleResize);
-  //     };
-  //   }, []);
-
-  //   useEffect(() => {
-  //     if (isMobileView) {
-  //       const intervalId = setInterval(() => {
-  //         setCurrentIndex((prevIndex) => (prevIndex + 1) % 4); // Assuming you have 3 slides
-  //       }, 3000); // Adjust interval as needed
-
-  //       return () => clearInterval(intervalId); // Clear the interval on component unmount
-  //     }
-  //   }, [isMobileView]);
-
-  //   const showSlide = (index) => {
-  //     const slides = document.querySelectorAll(".carousel-slide");
-  //     slides.forEach((slide, i) => {
-  //       slide.style.transform = `translateX(-${index * 100}%)`;
-  //     });
-  //   };
-
-  //   useEffect(() => {
-  //     showSlide(currentIndex);
-  //   }, [currentIndex, isMobileView]);
-
-  // if (isMobileView) {
-  //   return (
-  //     <div className="h-[100vh] w-[100vw] flex justify-center pt-[18vh]">
-  //       <video
-  //         className="absolute inset-0 object-cover w-full h-full"
-  //         autoPlay
-  //         loop
-  //         muted
-  //       >
-  //         <source src="bg loop.mp4" type="video/mp4" />
-  //         Your browser does not support the video tag.
-  //       </video>
-  //       <div className="carousel-container flex flex-col h-[89vh] w-[80vw] md:w-[90vw] justify-center items-center m-auto overflow-x-auto md:gap-14 gap-2">
-  //         <div className="w-[50vw] md:w-[25vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300">
-  //           <div>
-  //             <img
-  //               className="absolute bottom-0 right-0 w-[250px] "
-  //               width={60}
-  //               src="pro1.png"
-  //             ></img>
-  //           </div>
-  //           <div>
-  //             <img
-  //               className="absolute -bottom-4 -right-4"
-  //               width={60}
-  //               src="hme.png"
-  //             ></img>
-  //           </div>
-  //         </div>
-  //         <div className=" w-[50vw] md:w-[25vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300">
-  //           <div>
-  //             <img
-  //               className="absolute bottom-0 right-0 w-[250px] "
-  //               width={60}
-  //               src="pro3.png"
-  //             ></img>
-  //           </div>
-  //           <div>
-  //             <img
-  //               className="absolute -bottom-4 -right-4"
-  //               width={60}
-  //               src="hme.png"
-  //             ></img>
-  //           </div>
-  //         </div>
-  //         <div className=" w-[50vw] md:w-[25vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300">
-  //           <div>
-  //             <img
-  //               className="absolute bottom-0 right-0 w-[0px] "
-  //               width={60}
-  //               src="pro1.png"
-  //             ></img>
-  //           </div>
-  //           <div>
-  //             <img
-  //               className="absolute -bottom-4 -right-4"
-  //               width={60}
-  //               src="hme.png"
-  //             ></img>
-  //           </div>
-  //         </div>
-  //         <div className=" w-[50vw] md:w-[25vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300">
-  //           <div>
-  //             <img
-  //               className="absolute bottom-0 right-0 w-[400px] "
-  //               width={60}
-  //               src="pro2.png"
-  //             ></img>
-  //           </div>
-  //           <div>
-  //             <img
-  //               className="absolute -bottom-4 -right-4"
-  //               width={60}
-  //               src="hme.png"
-  //             ></img>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   );
-  // } else {
   return (
-    <div className="h-[100vh] w-[100vw] flex justify-center pt-[10vh]">
-      <video
-        className="absolute inset-0 object-cover w-full h-full"
-        autoPlay
-        loop
-        muted
-      >
-        <source src="bg loop.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className="carousel-container flex h-[85vh] w-[95vw] md:w-[90vw] justify-center items-center m-auto overflow-x-auto md:gap-14 gap-6">
-        <div className=" flex h-[85vh] w-[95vw] md:w-[95vw]  justify-center items-center m-auto overflow-x-auto  md:gap-5 gap-6  ">
-          <div className=" w-[20vw] md:w-[20vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300 ">
-            <div>
-              <img
-                className="absolute bottom-0 right-0 w-[250px] "
-                width={60}
-                src="pro1.png"
-              ></img>
+    <div
+      className="min-h-screen w-screen flex justify-center pt-[10vh] overflow-hidden bg-cover bg-center bg-repeat"
+      style={{ backgroundImage: "url('bg.png')" }}
+    >
+      <div className="relative w-[90vw] max-w-[1800px] h-auto flex flex-col md:flex-row md:gap-10 items-center justify-center mt-20 space-y-8 mb-10">
+        {[
+          { title: "Javed Ali", date: "12th March", img: "Javed Ali.png" },
+          { title: "DJ Khushi", date: "13th March", img: "DJ khushi.png" },
+          { title: "LMI", date: "14th March", img: "LMI.png" },
+        ].map((show, index) => (
+          <div
+            key={index}
+            className="w-full max-w-[450px] h-[40vh] bg-black/50 backdrop-blur-lg rounded-3xl border-2 border-yellow-300 relative shadow-xl hover:scale-105 transition-transform duration-300 flex"
+          >
+            <div className="p-6 text-white">
+              <h2 className="text-3xl font-bold">{show.title}</h2>
+              <p className="text-lg mt-2 text-yellow-300">{show.date}</p>
             </div>
             <div>
               <img
-                className="absolute -bottom-4 -right-4"
-                width={60}
+                className="absolute bottom-0 right-0 max-w-[220px] h-[350px] md:h-[400px] md:max-w-[250px]"
+                src={show.img}
+                alt={show.title}
+              />
+            </div>
+            <div>
+              <img
+                className="absolute -bottom-4 -right-4 w-14"
                 src="hme.png"
-              ></img>
+                alt="decoration"
+              />
             </div>
           </div>
-          <div className=" w-[20vw] md:w-[20vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300 ">
-            <div>
-              <img
-                className="absolute bottom-0 right-0 w-[250px] "
-                width={60}
-                src="pro3.png"
-              ></img>
-            </div>
-            <div>
-              <img
-                className="absolute -bottom-4 -right-4"
-                width={60}
-                src="hme.png"
-              ></img>
-            </div>
-          </div>
-          <div className="   w-[20vw] md:w-[20vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300">
-            <div>
-              <img
-                className="absolute bottom-0 right-0 w-[300px] "
-                width={60}
-                src="pro4.png"
-              ></img>
-            </div>
-            <div>
-              <img
-                className="absolute -bottom-4 -right-4"
-                width={60}
-                src="hme.png"
-              ></img>
-            </div>
-          </div>
-          <div className="  w-[20vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300">
-            <div>
-              <img
-                className="absolute bottom-0 right-0 w-[400px] "
-                width={60}
-                src="pro2.png"
-              ></img>
-            </div>
-            <div>
-              <img
-                className="absolute -bottom-4 -right-4"
-                width={60}
-                src="hme.png"
-              ></img>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
 };
-
-// return (
-//   <div className="h-[110vh] w-[100vw] bg-[url('../bgsym.png')] bg-repeat bg-cover pt-[18vh]  ">
-//     <div className="carousel-container flex h-[85vh] w-[95vw] md:w-[90vw] justify-center items-center m-auto overflow-x-auto md:gap-14 gap-6">
-//       <div className="carousel-slide w-[80vw] md:w-[25vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300">
-//         <div>
-//           <img
-//             className="absolute -bottom-4 -right-4"
-//             width="60"
-//             src="hme.png"
-//             alt="slide-1"
-//           />
-//         </div>
-//       </div>
-//       <div className="carousel-slide w-[80vw] md:w-[25vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300">
-//         <div>
-//           <img
-//             className="absolute -bottom-4 -right-4"
-//             width="60"
-//             src="hme.png"
-//             alt="slide-2"
-//           />
-//         </div>
-//       </div>
-//       <div className="carousel-slide w-[80vw] md:w-[25vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300">
-//         <div>
-//           <img
-//             className="absolute -bottom-4 -right-4"
-//             width="60"
-//             src="hme.png"
-//             alt="slide-3"
-//           />
-//         </div>
-//       </div>
-//     </div>
-
-/* <div className=" flex h-[85vh] w-[95vw] md:w-[90vw]  justify-center items-center m-auto overflow-x-auto  md:gap-14 gap-6  ">
-          <div className=" w-[85vw] md:w-[25vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300 ">
-            <div>
-              <img
-                className="absolute -bottom-4 -right-4"
-                width={60}
-                src="hme.png"
-              ></img>
-            </div>
-          </div>
-          <div className="  w-[85vw]  md:w-[25vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300 ">
-            <div>
-              <img
-                className="absolute -bottom-4 -right-4"
-                width={60}
-                src="hme.png"
-              ></img>
-            </div>
-          </div>
-          <div className="  w-[85vw] md:w-[25vw] h-[80vh] backdrop-blur-xl rounded-3xl border-2 border-yellow-300">
-            <div>
-              <img
-                className="absolute -bottom-4 -right-4"
-                width={60}
-                src="hme.png"
-              ></img>
-            </div>
-          </div>
-        </div> */
-
-//     </div>
-//   );
-// };
 
 export default Proshows;
